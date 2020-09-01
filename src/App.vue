@@ -17,6 +17,7 @@ export default {
   },
   mounted() {
       axios.get('http://47.104.94.75:5000/api/users').then(response => {
+          console.log(response.data);
           this.users = response.data;
       })
   }
